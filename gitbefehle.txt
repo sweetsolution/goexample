@@ -1,0 +1,2 @@
+git remote add origin https://github.com/sweetsolution/goexample.git
+git push -u origin master
