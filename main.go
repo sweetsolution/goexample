@@ -41,6 +41,8 @@ func main() {
 
 	fmt.Println("From channel: ", <-ch)
 
+	fmt.Print(twoval(10, 0))
+
 }
 
 func textout(text string) string {
@@ -49,4 +51,11 @@ func textout(text string) string {
 
 func add(x int, y int) int {
 	return x + y
+}
+
+func twoval(x int, y int) (int, bool) {
+	if y <= 0 {
+		return 0, false
+	}
+	return x / y, true
 }
